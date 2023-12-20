@@ -1,0 +1,34 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $page-font;
+  background-color: $primary-color;
+  color: $white;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+}
+
+p {
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+}

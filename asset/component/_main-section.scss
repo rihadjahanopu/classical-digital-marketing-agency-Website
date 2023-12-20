@@ -1,0 +1,500 @@
+.block-section {
+  display: flex;
+  padding-top: 300px;
+  margin-bottom: 100px;
+
+  .block-count {
+    flex: 1 0 50%;
+    width: 50%;
+    position: relative;
+    .image-count-block {
+      background-color: #190733;
+      border-radius: 40px;
+
+      img {
+        position: relative;
+        border-radius: 40px;
+        margin-left: 15px;
+        margin-bottom: 15px;
+      }
+    }
+
+    .pop-box {
+      background: rgb(23, 9, 44);
+      background: linear-gradient(
+        50deg,
+        rgba(23, 9, 44, 1) 78%,
+        rgba(141, 54, 38, 1) 100%
+      );
+      width: 500px;
+
+      position: absolute;
+      left: 52%;
+      bottom: 60px;
+      padding: 30px 40px;
+      transform: translateX(-50%);
+      border-radius: 6px;
+
+      h2 {
+        font-size: 1.6rem;
+        line-height: 1.8;
+        word-spacing: 1.1px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 1rem;
+        color: #8587a2;
+      }
+    }
+  }
+
+  .in-block-count {
+    .global-block-count {
+      padding-left: 50px;
+      .normal-block {
+        h1 {
+          font-size: 2.3rem;
+          line-height: 1.5;
+          margin-bottom: 20px;
+
+          span {
+            color: $band;
+          }
+        }
+
+        p {
+          color: #8587a2;
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    .flet-card {
+      background-color: #17092c;
+      width: 100%;
+      height: 100px;
+      border-radius: 50px;
+      margin-bottom: 20px;
+      display: flex;
+      transition: all 300ms ease-out;
+
+      &:hover {
+        transform: translateX(-15px);
+      }
+
+      .blocker1 {
+        flex: 1 0 20%;
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .carcel {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          background-color: #2b1a47;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .carcel2 {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .carcel3 {
+              width: 15px;
+              height: 15px;
+              border-radius: 50%;
+              border: 1px solid black;
+              display: flex;
+
+              justify-content: center;
+              align-items: center;
+
+              .carcel4 {
+                width: 2px;
+                height: 2px;
+                border-radius: 50%;
+                background-color: black;
+              }
+            }
+          }
+        }
+      }
+
+      .blocker2 {
+        flex: 1 0 80%;
+        width: 80%;
+        padding: 20px 0;
+
+        h2 {
+          font-size: 1.3rem;
+          margin-bottom: 10px;
+        }
+
+        p {
+          color: #8587a2;
+        }
+      }
+    }
+
+    .bg-change {
+      background-color: $band !important;
+
+      .bg-change1 {
+        background-color: white !important;
+
+        .bg-change2 {
+          background-color: $band !important;
+
+          .bg-change3 {
+            background-color: $band !important;
+            border: 1px solid white !important;
+
+            .bg-change4 {
+              background-color: white !important;
+            }
+          }
+        }
+      }
+    }
+
+    .bg-pre-cheng {
+      color: white !important;
+    }
+  }
+
+  .signecar {
+    strong {
+      display: block;
+      margin-top: 30px;
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: $band;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+// three section
+
+.three-secton {
+  background-color: #17092c;
+
+  .three-block-contol {
+    .fast-three-block {
+      display: flex;
+
+      .do-block {
+        flex: 1 0 50%;
+        width: 50%;
+        margin-top: 80px;
+        margin-bottom: 50px;
+
+        h2 {
+          font-size: 2rem;
+          word-spacing: 2px;
+
+          span {
+            color: $band;
+          }
+        }
+
+        p {
+          color: #8587a2;
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .secnd-three-block {
+      padding-bottom: 100px;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+
+      .card-block {
+        position: relative;
+        flex: 1 0 calc(33.333% - 20px);
+        width: calc(33.333% - 20px);
+        background-color: #100028;
+        padding: 40px 30px;
+        transition: all 300ms ease-out;
+
+        &:hover {
+          background-color: $band;
+          color: white;
+          transform: translateY(-15px);
+        }
+
+        &:hover p {
+          color: white;
+        }
+        &:hover strong {
+          color: white;
+        }
+
+        .card-icon-block {
+          i {
+            font-size: 3rem;
+            margin-bottom: 30px;
+          }
+        }
+
+        h3 {
+          font-size: 1.4rem;
+          letter-spacing: 1px;
+          margin-bottom: 20px;
+        }
+
+        p {
+          font-size: 0.9rem;
+          margin-bottom: 20px;
+          color: #8587a2;
+        }
+
+        strong {
+          text-transform: uppercase;
+          display: block;
+          color: $band;
+          font-size: 0.8rem;
+          i {
+            margin-left: 5px;
+          }
+        }
+
+        .pin {
+          background-color: #190733;
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          width: 150px;
+          height: 40px;
+          border-radius: 20px 0 0 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          p {
+            padding-top: 10px;
+          }
+        }
+      }
+
+      .dairek-change {
+        background-color: $band !important;
+
+        p {
+          color: white !important;
+        }
+
+        strong {
+          color: white !important;
+        }
+      }
+    }
+  }
+}
+
+// four section
+.fore-section {
+  background-color: #17092c;
+  .fore-contol {
+    display: flex;
+    position: relative;
+
+    gap: 40px;
+    padding-bottom: 100px;
+    .on-div {
+      background-color: #100028;
+      flex: 1 0 calc(40% - 20px);
+      height: max-content;
+      width: calc(40% - 20px);
+      padding: 50px 40px;
+      border-radius: 20px;
+      position: sticky;
+      top: 80px;
+      left: 0;
+
+      .on-card {
+        h2 {
+          font-size: 2.3rem;
+          line-height: 1.3;
+          letter-spacing: 1px;
+          margin-bottom: 20px;
+
+          span {
+            color: $band;
+          }
+        }
+
+        .p1 {
+          font-size: 1rem;
+          margin-bottom: 20px;
+          color: #8587a2;
+        }
+
+        .p2 {
+          color: #8587a2;
+          margin-bottom: 10px;
+          i {
+            color: $band;
+            margin-right: 10px;
+          }
+        }
+
+        .p3 {
+          color: #8587a2;
+          margin-bottom: 20px;
+
+          i {
+            color: $band;
+            margin-right: 10px;
+          }
+        }
+
+        .s-card {
+          background-color: #17092c;
+          padding: 40px 30px;
+          border-radius: 15px;
+          display: flex;
+          margin-bottom: 20px;
+
+          .s-card1 {
+            flex: 1 0 30%;
+            width: 30%;
+
+            .icon-cover {
+              display: flex;
+              justify-content: center;
+              background-color: #2b1a47;
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+
+              i {
+                font-size: 1.5rem;
+                padding-top: 10px;
+              }
+            }
+          }
+          .s-card2 {
+            flex: 1 0 70%;
+            width: 70%;
+
+            h2 {
+              font-size: 1.3rem;
+              line-height: 1.1;
+              letter-spacing: 1px;
+            }
+
+            p {
+              font-size: 1rem;
+              color: #8587a2;
+            }
+          }
+        }
+      }
+
+      a {
+        padding: 20px 30px;
+        background-color: $band;
+        color: white;
+        border-radius: 10px;
+        margin-top: 20px;
+        display: block;
+        width: max-content;
+        text-decoration: none;
+        transition: all 300ms ease-out;
+
+        &:hover {
+          background-color: white;
+          color: $band;
+        }
+      }
+    }
+
+    .off-div {
+      flex: 1 0 calc(60% - 20px);
+      width: calc(60% - 20px);
+
+      .card-coolam {
+        display: flex;
+        background-color: #100028;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 20px;
+
+        .in-page {
+          flex: 1 0 40%;
+          width: 40%;
+          img {
+            object-fit: cover;
+            object-position: center;
+            border-radius: 10px 0 0 10px;
+            overflow: hidden;
+            height: 100%;
+          }
+        }
+
+        .out-page {
+          flex: 1 0 60%;
+          width: 60%;
+          padding: 40px 30px;
+
+          span {
+            text-transform: uppercase;
+            color: white;
+            padding: 5px 10px;
+            background-color: #2b1a47;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            display: block;
+            width: max-content;
+            transition: all 300ms ease-out;
+
+            &:hover {
+              background-color: $band;
+            }
+          }
+
+          h2 {
+            font-size: 1.8rem;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+          }
+
+          p {
+            color: #8587a2;
+            margin-bottom: 20px;
+          }
+
+          strong {
+            color: $band;
+            i {
+              margin-left: 5px;
+            }
+
+            &:hover {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.rihad {
+  background-color: red;
+  color: #190733;
+  text-align: center;
+}

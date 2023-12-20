@@ -1,0 +1,181 @@
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: $primary-color;
+  border-bottom: 1px solid rgba(117, 114, 114, 0.485);
+  z-index: 100;
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav-aitem {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+
+      .nav-list {
+        list-style: none;
+        padding-block: 30px;
+        transition: color 300ms ease-out;
+        position: relative;
+
+        .dropdown-menu {
+          display: none;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 200px;
+          background-color: $primary-color;
+          border: 1px solid rgba(117, 114, 114, 0.485);
+          border-radius: 6px;
+          z-index: 30;
+
+          li {
+            list-style: none;
+            white-space: nowrap;
+            padding: 20px;
+
+            .own {
+              text-decoration: none;
+              color: #7e7e9a;
+              &:hover {
+                color: $band;
+              }
+            }
+          }
+        }
+
+        .nav-link {
+          text-decoration: none;
+          color: #7e7e9a;
+          i {
+            font-size: 0.9rem;
+            margin-left: 3px;
+          }
+        }
+        &:hover .nav-link {
+          color: $band;
+        }
+      }
+
+      .dropdown:hover .dropdown-menu {
+        display: inline;
+      }
+    }
+
+    .nav-sced {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      .icon i {
+        color: $band;
+        font-size: 1.8rem;
+        cursor: pointer;
+      }
+      .btn a {
+        background-color: $band;
+        padding: 20px 30px;
+        border-radius: 10px;
+        text-decoration: none;
+        color: $white;
+        font-weight: 400;
+        transition: all 300ms ease-out;
+        &:hover {
+          background-color: $white;
+          color: $band;
+        }
+      }
+    }
+    .bulet-section {
+      position: absolute;
+      width: 500px;
+      height: 100vh;
+      background-color: #2b1a47;
+      top: 0;
+      right: 0;
+      z-index: 10;
+      transition: all 300ms ease-out;
+      visibility: hidden;
+      opacity: 0;
+      pointer-events: none;
+
+      label {
+        display: block;
+        text-align: center;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        i {
+          font-size: 2rem;
+          cursor: pointer;
+          background-color: #100028;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          padding-top: 8px;
+          color: $band;
+        }
+      }
+
+      .contain-in-from {
+        margin-top: 100px;
+        padding-left: 50px;
+        padding-right: 50px;
+        animation: time 10s forwards 1;
+
+        @keyframes time {
+          0% {
+            transform: translateY(50%);
+          }
+
+          100% {
+            transform: translateX(0);
+          }
+        }
+
+        h1 {
+          font-size: 2.5rem;
+          line-height: 1.2;
+          letter-spacing: 2px;
+          margin-bottom: 40px;
+        }
+
+        p {
+          color: #7e7e9a;
+          margin-bottom: 30px;
+          font-size: 1.1rem;
+
+          i {
+            margin-right: 5px;
+            color: $band;
+          }
+        }
+        a {
+          display: block;
+          width: max-content;
+          background-color: $band;
+          padding: 20px 40px;
+          border-radius: 10px;
+          text-decoration: none;
+          color: white;
+          font-size: 1.1rem;
+          transition: color 300ms ease-out;
+          &:hover {
+            background-color: white;
+            color: $band;
+          }
+        }
+      }
+    }
+    #togle-in:checked ~ .bulet-section {
+      visibility: visible;
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
+}
